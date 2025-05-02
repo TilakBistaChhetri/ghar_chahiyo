@@ -1,0 +1,929 @@
+{
+  "projects_new": {
+    "success": true,
+    "projects": [
+      {
+        "id": 1,
+        "name": "DLF One Midtown",
+        "location": "Kathmandu, Basantapur",
+        "area": "Moti Nagar",
+        "price": "NRS 3.75 Cr",
+        "priceRange": "NRS 3.75 Cr - 10.50 Cr",
+        "propertyType": "4 BHK Apartment",
+        "size": "2400 - 4500 sq.ft.",
+        "possession": "Dec 2024",
+        "developer": "DLF Limited",
+        "description": "Luxury apartments with modern amenities in the heart of Delhi",
+        "rating": 4.7,
+        "isRecommended": true,
+        "tags": ["Premium", "Ready To Move"],
+        "amenities": ["Swimming Pool", "Gym", "Club House", "24x7 Security"],
+        "image": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1580041065738-e72023775cdc?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=1084&auto=format&fit=crop"
+        ],
+        "latitude": 28.6519,
+        "longitude": 77.1498
+      },
+      {
+        "id": 2,
+        "name": "Unity The Amaryllis",
+        "location": "New Delhi, Jaipur",
+        "area": "Karol Bagh",
+        "price": "NRS 2.25 Cr",
+        "priceRange": "NRS 2.25 Cr - 12.70 Cr",
+        "propertyType": "3 BHK Apartment",
+        "size": "1800 - 3200 sq.ft.",
+        "possession": "Mar 2025",
+        "developer": "Unity Group",
+        "description": "Premium residences with world-class amenities",
+        "rating": 4.5,
+        "isRecommended": true,
+        "tags": ["Under Construction", "High ROI"],
+        "amenities": ["Swimming Pool", "Gym", "Tennis Court", "Sky Lounge"],
+        "image": "https://images.unsplash.com/photo-1580216143879-3a7e4fd7a05c?q=80&w=1074&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1580216143879-3a7e4fd7a05c?q=80&w=1074&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1600607687644-c7987ebd8e16?q=80&w=1170&auto=format&fit=crop"
+        ],
+        "latitude": 28.6417,
+        "longitude": 77.191
+      },
+      {
+        "id": 3,
+        "name": "Property Gokul Dham",
+        "location": "New Delhi",
+        "area": "Sector 25 Rohini",
+        "price": "NRS 38.0 Lac",
+        "priceRange": "NRS 38.0 Lac - 1.15 Cr",
+        "propertyType": "2, 3, 4 BHK Multistorey Apartment",
+        "size": "950 - 1850 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Gokul Builders",
+        "description": "Affordable luxury apartments with modern amenities",
+        "rating": 4.2,
+        "isRecommended": false,
+        "tags": ["Ready To Move", "Affordable"],
+        "amenities": ["Parking", "Park", "Power Backup", "Security"],
+        "image": "https://images.unsplash.com/photo-1560448204-61dc36dc98c8?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1560448204-61dc36dc98c8?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1074&auto=format&fit=crop"
+        ],
+        "latitude": 28.7197,
+        "longitude": 77.1158
+      },
+      {
+        "id": 4,
+        "name": "Tata Value Homes",
+        "location": "New Delhi",
+        "area": "Dwarka Expressway",
+        "price": "NRS 62.5 Lac",
+        "priceRange": "NRS62.5 Lac - 95.0 Lac",
+        "propertyType": "2 BHK Apartment",
+        "size": "1050 - 1250 sq.ft.",
+        "possession": "Jun 2025",
+        "developer": "Tata Housing",
+        "description": "Affordable homes with quality construction",
+        "rating": 4.3,
+        "isRecommended": true,
+        "tags": ["Under Construction", "Value for Money"],
+        "amenities": [
+          "Clubhouse",
+          "Children's Play Area",
+          "Jogging Track",
+          "Garden"
+        ],
+        "image": "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1611048267451-e6ed903d4a38?q=80&w=1172&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1570793005386-840846445fed?q=80&w=1887&auto=format&fit=crop"
+        ],
+        "latitude": 28.5921,
+        "longitude": 76.9851
+      },
+      {
+        "id": 5,
+        "name": "Godrej Prime",
+        "location": "New Delhi",
+        "area": "Okhla",
+        "price": "NRS1.2 Cr",
+        "priceRange": "NRS1.2 Cr - 2.8 Cr",
+        "propertyType": "3 BHK Apartment",
+        "size": "1350 - 1850 sq.ft.",
+        "possession": "Dec 2025",
+        "developer": "Godrej Properties",
+        "description": "Premium apartments with sustainable design",
+        "rating": 4.6,
+        "isRecommended": true,
+        "tags": ["Under Construction", "Green Building"],
+        "amenities": ["Infinity Pool", "Spa", "Gym", "Multipurpose Hall"],
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1615876253551-9f5e446c4ddf?q=80&w=1887&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1887&auto=format&fit=crop"
+        ],
+        "latitude": 28.5603,
+        "longitude": 77.2745
+      },
+      {
+        "id": 6,
+        "name": "Munish Home",
+        "location": "New Delhi",
+        "area": "Dwarka Metro",
+        "price": "NRS42.5 Lac",
+        "priceRange": "NRS42.5 Lac - 85.0 Lac",
+        "propertyType": "3 BHK Apartment",
+        "size": "1200 - 1500 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Munish Developers",
+        "description": "Comfortable apartments near Dwarka Metro",
+        "rating": 4.0,
+        "isRecommended": false,
+        "tags": ["Ready To Move", "Near Metro"],
+        "amenities": ["Lift", "Security", "Power Backup", "Visitor Parking"],
+        "image": "https://images.unsplash.com/photo-1623298317883-6b70254edf31?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1623298317883-6b70254edf31?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1622015663084-307d19eabca2?q=80&w=1172&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?q=80&w=1887&auto=format&fit=crop"
+        ],
+        "latitude": 28.6139,
+        "longitude": 77.0381
+      },
+      {
+        "id": 6,
+        "name": "ATS Pristine",
+        "location": "New Delhi",
+        "area": "Sector 150",
+        "price": "NRS1.5 Cr",
+        "priceRange": "NRS1.5 Cr - 2.5 Cr",
+        "propertyType": "3, 4 BHK Apartment",
+        "size": "1750 - 2650 sq.ft.",
+        "possession": "Dec 2026",
+        "developer": "ATS Group",
+        "description": "Premium apartments with seamless connectivity",
+        "rating": 4.4,
+        "isRecommended": true,
+        "tags": ["Under Construction", "Premium"],
+        "amenities": [
+          "Clubhouse",
+          "Swimming Pool",
+          "Landscaped Gardens",
+          "Sports Facility"
+        ],
+        "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1603768651585-8ada1f40f681?q=80&w=1170&auto=format&fit=crop"
+        ],
+        "latitude": 28.4753,
+        "longitude": 77.4148
+      },
+      {
+        "id": 7,
+        "name": "DLF One Midtown",
+        "location": "Kathmandu",
+        "area": "Moti Nagar",
+        "price": "NRS3.75 Cr",
+        "priceRange": "NRS3.75 Cr - 10.50 Cr",
+        "propertyType": "4 BHK Apartment",
+        "size": "2400 - 4500 sq.ft.",
+        "possession": "Dec 2024",
+        "developer": "DLF Limited",
+        "description": "Luxury apartments with modern amenities in the heart of Delhi",
+        "rating": 4.7,
+        "isRecommended": true,
+        "tags": ["Premium", "Ready To Move"],
+        "amenities": ["Swimming Pool", "Gym", "Club House", "24x7 Security"],
+        "image": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1580041065738-e72023775cdc?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=1084&auto=format&fit=crop"
+        ],
+        "latitude": 28.6519,
+        "longitude": 77.1498
+      }
+    ],
+    "totalCount": 6,
+    "totalPages": 1,
+    "currentPage": 1
+  },
+  "projects": {
+    "success": true,
+    "location": "New Delhi",
+    "projects": [
+      {
+        "id": 1,
+        "name": "Property Gokul Dham",
+        "location": "Kathmandu",
+        "area": "Sector 25 Rohini",
+        "price": "NRS38.0 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "2, 3, 4 BHK Multistorey Apartment",
+        "size": "950 - 1850 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Gokul Builders",
+        "description": "Affordable luxury apartments with modern amenities",
+        "rating": 4.2,
+        "isNewlyLaunched": true,
+        "tags": ["Ready To Move", "Affordable"],
+        "amenities": ["Parking", "Park", "Power Backup", "Security"],
+        "image": "https://images.unsplash.com/photo-1560448204-61dc36dc98c8?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1560448204-61dc36dc98c8?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1074&auto=format&fit=crop"
+        ],
+        "latitude": 28.7197,
+        "longitude": 77.1158
+      },
+      {
+        "id": 2,
+        "name": "Munish Home",
+        "location": "New Delhi",
+        "area": "Dwarka Metro",
+        "price": "NRS42.5 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "3 BHK Apartment",
+        "size": "1200 - 1500 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Munish Developers",
+        "description": "Comfortable apartments near Dwarka Metro",
+        "rating": 4.0,
+        "isNewlyLaunched": true,
+        "tags": ["Ready To Move", "Near Metro"],
+        "amenities": ["Lift", "Security", "Power Backup", "Visitor Parking"],
+        "image": "https://images.unsplash.com/photo-1623298317883-6b70254edf31?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1623298317883-6b70254edf31?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1622015663084-307d19eabca2?q=80&w=1172&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?q=80&w=1887&auto=format&fit=crop"
+        ],
+        "latitude": 28.6139,
+        "longitude": 77.0381
+      },
+      {
+        "id": 3,
+        "name": "DLF Capital Greens",
+        "location": "New Delhi",
+        "area": "Moti Nagar",
+        "price": "NRS1.8 Cr",
+        "priceSubtext": "onwards",
+        "propertyType": "4 BHK Apartment",
+        "size": "2200 - 3500 sq.ft.",
+        "possession": "Jul 2025",
+        "developer": "DLF Limited",
+        "description": "Luxury apartments in premium location with extensive amenities",
+        "rating": 4.6,
+        "isNewlyLaunched": false,
+        "tags": ["Under Construction", "Luxury"],
+        "amenities": ["Swimming Pool", "Club House", "Tennis Court", "Gym"],
+        "image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=1084&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=1084&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1174&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1503174971373-b1f69c758a4b?q=80&w=1513&auto=format&fit=crop"
+        ],
+        "latitude": 28.6586,
+        "longitude": 77.1376
+      },
+      {
+        "id": 4,
+        "name": "ATS Pristine",
+        "location": "New Delhi",
+        "area": "Sector 150",
+        "price": "NRS1.5 Cr",
+        "priceSubtext": "onwards",
+        "propertyType": "3, 4 BHK Apartment",
+        "size": "1750 - 2650 sq.ft.",
+        "possession": "Dec 2026",
+        "developer": "ATS Group",
+        "description": "Premium apartments with seamless connectivity",
+        "rating": 4.4,
+        "isNewlyLaunched": false,
+        "tags": ["Under Construction", "Premium"],
+        "amenities": [
+          "Clubhouse",
+          "Swimming Pool",
+          "Landscaped Gardens",
+          "Sports Facility"
+        ],
+        "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=1170&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1603768651585-8ada1f40f681?q=80&w=1170&auto=format&fit=crop"
+        ],
+        "latitude": 28.4753,
+        "longitude": 77.4148
+      },
+      {
+        "id": 5,
+        "name": "Ashiana Housing",
+        "location": "New Delhi",
+        "area": "Vasant Kunj",
+        "price": "NRS95.0 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "2 BHK Apartment",
+        "size": "1050 - 1250 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Ashiana Housing Ltd",
+        "description": "Quality homes for middle-income families",
+        "rating": 4.3,
+        "isNewlyLaunched": false,
+        "tags": ["Ready To Move", "Middle Income"],
+        "amenities": ["Park", "Security", "Power Backup", "Community Hall"],
+        "image": "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617104678992-de229880e48d?q=80&w=1926&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617098650990-817c1c21d969?q=80&w=1770&auto=format&fit=crop"
+        ],
+        "latitude": 28.5311,
+        "longitude": 77.159
+      },
+      {
+        "id": 6,
+        "name": "Ashiana Housing",
+        "location": "Kathmandu, Basantapur",
+        "area": "Vasant Kunj",
+        "price": "NRS95.0 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "2 BHK Apartment",
+        "size": "1050 - 1250 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Ashiana Housing Ltd",
+        "description": "Quality homes for middle-income families",
+        "rating": 4.3,
+        "isNewlyLaunched": false,
+        "tags": ["Ready To Move", "Middle Income"],
+        "amenities": ["Park", "Security", "Power Backup", "Community Hall"],
+        "image": "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617104678992-de229880e48d?q=80&w=1926&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617098650990-817c1c21d969?q=80&w=1770&auto=format&fit=crop"
+        ],
+        "latitude": 28.5311,
+        "longitude": 77.159
+      },
+      {
+        "id": 7,
+        "name": "Ashiana Housing",
+        "location": "Kathmandu, Basantapur",
+        "area": "Vasant Kunj",
+        "price": "NRS95.0 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "2 BHK Apartment",
+        "size": "1050 - 1250 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Ashiana Housing Ltd",
+        "description": "Quality homes for middle-income families",
+        "rating": 4.3,
+        "isNewlyLaunched": false,
+        "tags": ["Ready To Move", "Middle Income"],
+        "amenities": ["Park", "Security", "Power Backup", "Community Hall"],
+        "image": "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617104678992-de229880e48d?q=80&w=1926&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617098650990-817c1c21d969?q=80&w=1770&auto=format&fit=crop"
+        ],
+        "latitude": 28.5311,
+        "longitude": 77.159
+      },
+      {
+        "id": 8,
+        "name": "Ashiana Housing",
+        "location": "New Delhi",
+        "area": "Vasant Kunj",
+        "price": "NRS 15.0 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "2 BHK Apartment",
+        "size": "1050 - 1250 sq.ft.",
+        "possession": "Ready to Move",
+        "developer": "Ashiana Housing Ltd",
+        "description": "Quality homes for middle-income families",
+        "rating": 4.3,
+        "isNewlyLaunched": false,
+        "tags": ["Ready To Move", "Middle Income"],
+        "amenities": ["Park", "Security", "Power Backup", "Community Hall"],
+        "image": "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+        "images": [
+          "https://images.unsplash.com/photo-1565953554309-d181306db7b5?q=80&w=1067&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617104678992-de229880e48d?q=80&w=1926&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1617098650990-817c1c21d969?q=80&w=1770&auto=format&fit=crop"
+        ],
+        "latitude": 28.5311,
+        "longitude": 77.159
+      }
+    ],
+
+    "filters": {
+      "propertyTypes": ["Apartment", "Villa", "Builder Floor"],
+      "budgetRanges": [
+        "Below NRS50 Lac",
+        "NRS50 Lac - NRS1 Cr",
+        "NRS1 Cr - NRS2 Cr",
+        "Above NRS2 Cr"
+      ],
+      "bhkTypes": ["1 BHK", "2 BHK", "3 BHK", "4 BHK", "5+ BHK"],
+      "possessionStatus": ["Ready to Move", "Under Construction"]
+    },
+    "totalCount": 5,
+    "totalPages": 1,
+    "currentPage": 1
+  },
+  "properties/1": {
+    "success": true,
+    "property": {
+      "id": 1,
+      "name": "DLF One Midtown",
+      "location": "Kathmandu, Basantapur ",
+      "area": "Moti Nagar",
+      "address": "Plot No. A-12, Moti Nagar, New Delhi - 110015",
+      "price": "NRS3.75 Cr",
+      "priceRange": "NRS3.75 Cr - 10.50 Cr",
+      "pricePerSqFt": "NRS15,625",
+      "propertyType": "4 BHK Apartment",
+      "configurations": [
+        {
+          "type": "4 BHK",
+          "size": "2400 sq.ft.",
+          "price": "NRS3.75 Cr",
+          "floorPlans": ["https://example.com/floorplans/dlf-midtown-4bhk.jpg"]
+        },
+        {
+          "type": "4 BHK Premium",
+          "size": "3200 sq.ft.",
+          "price": "NRS5.5 Cr",
+          "floorPlans": [
+            "https://example.com/floorplans/dlf-midtown-4bhk-premium.jpg"
+          ]
+        },
+        {
+          "type": "5 BHK Penthouse",
+          "size": "4500 sq.ft.",
+          "price": "NRS10.50 Cr",
+          "floorPlans": [
+            "https://example.com/floorplans/dlf-midtown-5bhk-penthouse.jpg"
+          ]
+        }
+      ],
+      "possession": "Dec 2024",
+      "developer": {
+        "name": "DLF Limited",
+        "established": 1946,
+        "totalProjects": 380,
+        "logo": "https://example.com/logos/dlf-logo.png"
+      },
+      "description": "Luxury apartments with modern amenities in the heart of Delhi. The project offers spacious apartments with high-quality construction and excellent connectivity.",
+      "longDescription": "DLF One Midtown is a premium residential project located in Moti Nagar, New Delhi. It offers 4 and 5 BHK apartments with world-class amenities and facilities. The project is well-connected to major roads, metro stations, schools, hospitals, and shopping centers.\n\nThe apartments are designed with spacious rooms, premium fittings, and ample ventilation. The complex includes facilities like 24/7 security, power backup, swimming pool, gymnasium, and landscaped gardens.",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Amit G.",
+          "rating": 5.0,
+          "comment": "Excellent property with top-notch amenities and construction quality.",
+          "date": "2025-03-15"
+        },
+        {
+          "id": 2,
+          "userName": "Neha S.",
+          "rating": 4.5,
+          "comment": "Great location and premium feeling. Slightly overpriced but worth it.",
+          "date": "2025-02-20"
+        }
+      ],
+      "tags": ["Premium", "Luxury", "High-End"],
+      "amenities": [
+        { "name": "Swimming Pool", "icon": "pool" },
+        { "name": "Gymnasium", "icon": "fitness_center" },
+        { "name": "Club House", "icon": "business" },
+        { "name": "24x7 Security", "icon": "security" },
+        { "name": "Tennis Court", "icon": "sports_tennis" },
+        { "name": "Spa", "icon": "spa" },
+        { "name": "Children's Play Area", "icon": "child_friendly" },
+        { "name": "Landscaped Gardens", "icon": "grass" }
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Moti Nagar Metro Station",
+          "distance": "0.5 km",
+          "type": "transport"
+        },
+        { "name": "DPS School", "distance": "1.2 km", "type": "education" },
+        {
+          "name": "Max Super Speciality Hospital",
+          "distance": "2.0 km",
+          "type": "healthcare"
+        },
+        { "name": "Pacific Mall", "distance": "1.8 km", "type": "shopping" }
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Building Exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Lobby"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=1084&auto=format&fit=crop",
+          "caption": "Swimming Pool"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Living Room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=1287&auto=format&fit=crop",
+          "caption": "Master Bedroom"
+        }
+      ],
+      "latitude": 28.6519,
+      "longitude": 77.1498,
+      "brochureUrl": "https://example.com/brochures/dlf-midtown.pdf",
+      "emi": {
+        "starting": "NRS2,85,000",
+        "loanAmount": "NRS3.0 Cr",
+        "interestRate": "8.5%",
+        "tenure": "20 years"
+      }
+    },
+    "similarProperties": [
+      {
+        "id": 3,
+        "name": "DLF Capital Greens",
+        "location": "Kathmandu, Basantapur",
+        "price": "NRS1.8 Cr",
+        "priceSubtext": "onwards",
+        "propertyType": "4 BHK Apartment",
+        "size": "2200 - 3500 sq.ft.",
+        "image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=1084&auto=format&fit=crop"
+      },
+      {
+        "id": 5,
+        "name": "Godrej Prime",
+        "location": "Okhla, New Delhi",
+        "price": "NRS1.2 Cr",
+        "priceSubtext": "onwards",
+        "propertyType": "3 BHK Apartment",
+        "size": "1350 - 1850 sq.ft.",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop"
+      }
+    ]
+  },
+  "properties/2": {
+    "success": true,
+    "property": {
+      "id": 2,
+      "name": "Unity The Amaryllis",
+      "location": "New Delhi",
+      "area": "Karol Bagh",
+      "address": "Plot No. 24, Karol Bagh, New Delhi - 110005",
+      "price": "NRS2.25 Cr",
+      "priceRange": "NRS2.25 Cr - 12.70 Cr",
+      "pricePerSqFt": "NRS12,500",
+      "propertyType": "3 BHK Apartment",
+      "configurations": [
+        {
+          "type": "3 BHK",
+          "size": "1800 sq.ft.",
+          "price": "NRS2.25 Cr",
+          "floorPlans": [
+            "https://example.com/floorplans/unity-amaryllis-3bhk.jpg"
+          ]
+        },
+        {
+          "type": "4 BHK",
+          "size": "2400 sq.ft.",
+          "price": "NRS3.45 Cr",
+          "floorPlans": [
+            "https://example.com/floorplans/unity-amaryllis-4bhk.jpg"
+          ]
+        },
+        {
+          "type": "5 BHK Duplex",
+          "size": "3200 sq.ft.",
+          "price": "NRS12.70 Cr",
+          "floorPlans": [
+            "https://example.com/floorplans/unity-amaryllis-5bhk-duplex.jpg"
+          ]
+        }
+      ],
+      "possession": "Mar 2025",
+      "developer": {
+        "name": "Unity Group",
+        "established": 1996,
+        "totalProjects": 42,
+        "logo": "https://example.com/logos/unity-group-logo.png"
+      },
+      "description": "Premium residences with world-class amenities in the heart of Delhi",
+      "longDescription": "Unity The Amaryllis is a premium residential project located in Karol Bagh, New Delhi. It offers 3, 4, and 5 BHK apartments with world-class amenities and facilities. The project is well-connected to major roads, metro stations, schools, hospitals, and shopping centers.\n\nThe apartments are designed with spacious rooms, premium fittings, and ample ventilation. The complex includes facilities like 24/7 security, power backup, swimming pool, gymnasium, and landscaped gardens.",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Rajiv M.",
+          "rating": 4.5,
+          "comment": "Great location and premium construction quality.",
+          "date": "2025-02-10"
+        },
+        {
+          "id": 2,
+          "userName": "Sonia K.",
+          "rating": 4.0,
+          "comment": "Good investment opportunity but slightly delayed possession.",
+          "date": "2025-01-22"
+        }
+      ],
+      "tags": ["Under Construction", "High ROI", "Premium"],
+      "amenities": [
+        { "name": "Swimming Pool", "icon": "pool" },
+        { "name": "Gymnasium", "icon": "fitness_center" },
+        { "name": "Tennis Court", "icon": "sports_tennis" },
+        { "name": "Sky Lounge", "icon": "deck" },
+        { "name": "Children's Play Area", "icon": "child_friendly" },
+        { "name": "Multipurpose Hall", "icon": "meeting_room" },
+        { "name": "Landscaped Gardens", "icon": "grass" },
+        { "name": "24x7 Security", "icon": "security" }
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Karol Bagh Metro Station",
+          "distance": "0.8 km",
+          "type": "transport"
+        },
+        {
+          "name": "Delhi Public School",
+          "distance": "1.5 km",
+          "type": "education"
+        },
+        {
+          "name": "Sir Ganga Ram Hospital",
+          "distance": "1.2 km",
+          "type": "healthcare"
+        },
+        {
+          "name": "Karol Bagh Market",
+          "distance": "0.5 km",
+          "type": "shopping"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1580216143879-3a7e4fd7a05c?q=80&w=1074&auto=format&fit=crop",
+          "caption": "Building Exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Entrance Lobby"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7987ebd8e16?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Swimming Pool"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Living Room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Bedroom"
+        }
+      ],
+      "latitude": 28.6417,
+      "longitude": 77.191,
+      "brochureUrl": "https://example.com/brochures/unity-amaryllis.pdf",
+      "emi": {
+        "starting": "NRS1,75,000",
+        "loanAmount": "NRS1.80 Cr",
+        "interestRate": "8.75%",
+        "tenure": "20 years"
+      }
+    },
+    "similarProperties": [
+      {
+        "id": 4,
+        "name": "ATS Pristine",
+        "location": "Sector 150, New Delhi",
+        "price": "NRS1.5 Cr",
+        "priceSubtext": "onwards",
+        "propertyType": "3, 4 BHK Apartment",
+        "size": "1750 - 2650 sq.ft.",
+        "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1170&auto=format&fit=crop"
+      },
+      {
+        "id": 5,
+        "name": "Godrej Prime",
+        "location": "Okhla, New Delhi",
+        "price": "NRS1.2 Cr",
+        "priceSubtext": "onwards",
+        "propertyType": "3 BHK Apartment",
+        "size": "1350 - 1850 sq.ft.",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop"
+      }
+    ]
+  },
+  "properties/3": {
+    "success": true,
+    "property": {
+      "id": 3,
+      "name": "Property Gokul Dham",
+      "location": "Kathmandu, Basantapur",
+      "area": "Sector 25 Rohini",
+      "address": "Plot No. 123, Sector 25, Rohini, New Delhi - 110085",
+      "price": "NRS38.0 Lac",
+      "priceRange": "NRS38.0 Lac - 1.15 Cr",
+      "pricePerSqFt": "NRS4,000",
+      "propertyType": "2, 3, 4 BHK Multistorey Apartment",
+      "configurations": [
+        {
+          "type": "2 BHK",
+          "size": "950 sq.ft.",
+          "price": "NRS38.0 Lac",
+          "floorPlans": ["https://example.com/floorplans/gokul-dham-2bhk.jpg"]
+        },
+        {
+          "type": "3 BHK",
+          "size": "1350 sq.ft.",
+          "price": "NRS54.0 Lac",
+          "floorPlans": ["https://example.com/floorplans/gokul-dham-3bhk.jpg"]
+        },
+        {
+          "type": "4 BHK",
+          "size": "1850 sq.ft.",
+          "price": "NRS1.15 Cr",
+          "floorPlans": ["https://example.com/floorplans/gokul-dham-4bhk.jpg"]
+        }
+      ],
+      "possession": "Ready to Move",
+      "developer": {
+        "name": "Gokul Builders",
+        "established": 2001,
+        "totalProjects": 15,
+        "logo": "https://example.com/logos/gokul-builders.png"
+      },
+      "description": "Affordable luxury apartments with modern amenities in the heart of Rohini. The project offers spacious apartments with high-quality construction and excellent connectivity.",
+      "longDescription": "Property Gokul Dham is a premium residential project located in Sector 25, Rohini, New Delhi. It offers 2, 3, and 4 BHK apartments with modern amenities and facilities. The project is well-connected to major roads, metro stations, schools, hospitals, and shopping centers.\n\nThe apartments are designed with spacious rooms, premium fittings, and ample ventilation. The complex includes facilities like 24/7 security, power backup, children's play area, and landscaped gardens.",
+      "rating": 4.2,
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Rahul S.",
+          "rating": 4.5,
+          "comment": "Great location and value for money. Construction quality is good.",
+          "date": "2025-03-20"
+        },
+        {
+          "id": 2,
+          "userName": "Priya M.",
+          "rating": 4.0,
+          "comment": "Nice apartments but the maintenance could be better.",
+          "date": "2025-02-15"
+        }
+      ],
+      "tags": ["Ready To Move", "Affordable", "Family-Friendly"],
+      "amenities": [
+        { "name": "Parking", "icon": "car" },
+        { "name": "Park", "icon": "tree" },
+        { "name": "Power Backup", "icon": "power" },
+        { "name": "Security", "icon": "shield" },
+        { "name": "Children's Play Area", "icon": "child" },
+        { "name": "Lift", "icon": "elevator" },
+        { "name": "Visitor Parking", "icon": "parking" },
+        { "name": "Gymnasium", "icon": "dumbbell" }
+      ],
+      "nearbyFacilities": [
+        {
+          "name": "Rohini East Metro Station",
+          "distance": "1.2 km",
+          "type": "transport"
+        },
+        { "name": "DPS School", "distance": "0.8 km", "type": "education" },
+        { "name": "Max Hospital", "distance": "2.5 km", "type": "healthcare" },
+        { "name": "Unity Mall", "distance": "1.5 km", "type": "shopping" }
+      ],
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-61dc36dc98c8?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Building Exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Community Area"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1074&auto=format&fit=crop",
+          "caption": "Landscaped Garden"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1486304873000-235643847519?q=80&w=2059&auto=format&fit=crop",
+          "caption": "Living Room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1170&auto=format&fit=crop",
+          "caption": "Bedroom"
+        }
+      ],
+      "latitude": 28.7197,
+      "longitude": 77.1158,
+      "brochureUrl": "https://example.com/brochures/gokul-dham.pdf",
+      "emi": {
+        "starting": "NRS23,500",
+        "loanAmount": "NRS30.4 Lac",
+        "interestRate": "8.5%",
+        "tenure": "20 years"
+      }
+    },
+    "similarProperties": [
+      {
+        "id": 6,
+        "name": "Munish Home",
+        "location": "Dwarka Metro, New Delhi",
+        "price": "NRS42.5 Lac",
+        "priceSubtext": "onwards",
+        "propertyType": "3 BHK Apartment",
+        "size": "1200 - 1500 sq.ft.",
+        "image": "https://images.unsplash.com/photo-1623298317883-6b70254edf31?q=80&w=1170&auto=format&fit=crop"
+      }
+    ]
+  },
+  "search/recent": {
+    "success": true,
+    "recentSearches": [
+      {
+        "id": 1,
+        "type": "YOUR SEARCH",
+        "propertyType": "2,3 BHK",
+        "location": "New Delhi",
+        "timestamp": "2025-04-16T14:23:15Z"
+      },
+      {
+        "id": 2,
+        "type": "YOUR SEARCH",
+        "propertyType": "Villa",
+        "location": "Gurgaon",
+        "timestamp": "2025-04-15T18:45:32Z"
+      }
+    ],
+    "recommendedSearches": [
+      {
+        "id": 3,
+        "type": "RECOMMENDED",
+        "propertyType": "2,3 BHK",
+        "distance": "5KM From",
+        "location": "New Delhi",
+        "reason": "Based on your search history"
+      },
+      {
+        "id": 4,
+        "type": "RECOMMENDED",
+        "propertyType": "4 BHK",
+        "distance": "10KM From",
+        "location": "South Delhi",
+        "reason": "Popular in your area"
+      }
+    ]
+  },
+  "user": {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "email": "rahul.sharma@example.com",
+    "phone": "+91 98765 43210",
+    "savedProperties": [1, 3, 5],
+    "searches": [
+      {
+        "id": 1,
+        "queryString": "2 BHK in New Delhi",
+        "timestamp": "2025-04-16T14:23:15Z"
+      },
+      {
+        "id": 2,
+        "queryString": "Villa in Gurgaon",
+        "timestamp": "2025-04-15T18:45:32Z"
+      }
+    ],
+    "preferences": {
+      "propertyTypes": ["Apartment", "Villa"],
+      "priceRange": {
+        "min": 5000000,
+        "max": 20000000
+      },
+      "locations": ["New Delhi", "Gurgaon", "Noida"],
+      "bhkTypes": [2, 3, 4]
+    }
+  }
+}
