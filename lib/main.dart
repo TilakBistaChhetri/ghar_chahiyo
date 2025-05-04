@@ -1,5 +1,6 @@
 // import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:ghar_chaiyo/presentation/pages/splash/splash.dart';
 // import 'package:flutter/scheduler.dart';
 // import 'package:flutter/services.dart';
 import 'theme/theme.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       title: 'Ghar Chaiyo',
       theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      //home: const HomeScreen(),
+      home:const Splash(),
 
       // Define your routes
       routes: {

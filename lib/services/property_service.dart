@@ -100,7 +100,7 @@ class PropertyService {
         }
       }
 
-      // For debugging - log error response
+      
       if (response.statusCode != 200) {
         debugPrint('API error: ${response.body}');
       }

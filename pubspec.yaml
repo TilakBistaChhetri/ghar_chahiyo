@@ -43,6 +43,12 @@ dependencies:
   geolocator: ^10.0.0
   pdf: ^3.11.3
   share_plus: ^11.0.0
+  flutter_screenutil: ^5.9.3 #for managing device screen
+  animation_wrappers: ^3.0.0 #for animation
+  country_picker: ^2.0.27 # for country and flag choose 
+  awesome_bottom_bar: ^1.2.4 # for buttom navi bar
+  flutter_feather_icons: ^2.0.0+1 # for icons
+  bottom_bar_with_sheet: ^2.4.0
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +75,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/images/
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

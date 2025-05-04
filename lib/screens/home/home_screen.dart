@@ -129,14 +129,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _notificationAnimController.dispose();
     super.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final screenSize = MediaQuery.of(context).size;
     final isSmallScreen = screenSize.width < 360;
 
-    // Set system overlay style to match app theme
+
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: AppColors.primary,
