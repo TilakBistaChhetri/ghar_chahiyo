@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ghar_chaiyo/presentation/pages/general/home/notification_page.dart';
 
 import '../../../../core/constants/my_assets.dart';
 import '../../../../core/constants/my_colors.dart';
@@ -23,19 +24,50 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    //Image.asset(MyIcons.menu, width: 24, height: 24),
+                     InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NotificationPage(),
+                          ),
+                        );
+                      },
+                      child: Image.asset(
+                        MyIcons.menu,
+                        width: 24,
+                        height: 24,
+                      ),
+                    ),
+
                     Image.asset(
                       MyAssets.Logo,
                       height: 42,
                       width: 42,
                       fit: BoxFit.contain,
                     ),
-                    Row(
-                      children: [
-                        Icon(Icons.person_outline, size: 24),
-                        const SizedBox(width: 16),
-                        Icon(Icons.notifications_none, size: 20),
-                      ],
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NotificationPage(),
+                          ),
+                        );
+                      },
+                      child: Image.asset(
+                        MyIcons.notification,
+                        width: 20,
+                        height: 20,
+                      ),
                     ),
+
+                    // Image.asset(
+                    //   MyIcons.notification,
+                    //   width: 20,
+                    //   height: 20,
+                    // ),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -98,8 +130,12 @@ class HomePage extends StatelessWidget {
                         iconPath: MyIcons.sitelist,
                         label: 'Site\nListings',
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> SiteListingPage()));
-                     
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SiteListingPage(),
+                            ),
+                          );
                         },
                       ),
                     ],
@@ -115,7 +151,9 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: MyColors.backgroundColor,
-                    border: Border.all(color:const Color.fromARGB(255, 248, 244, 244)),
+                    border: Border.all(
+                      color: const Color.fromARGB(255, 248, 244, 244),
+                    ),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Column(
@@ -126,14 +164,12 @@ class HomePage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
-                          color: MyColors.textColor
+                          color: MyColors.textColor,
                         ),
                       ),
                       const SizedBox(height: 8),
                       InkWell(
-                        onTap: () {
-                        
-                        },
+                        onTap: () {},
                         child: const Text(
                           "Share Requirements",
                           style: TextStyle(

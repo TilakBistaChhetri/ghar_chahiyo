@@ -25,5 +25,7 @@ class MyIcons {
   static const String sports = "assets/icons/sports.png";
   static const String laundry = "assets/icons/laundry.png";
 
-   static const String account = "assets/icons/account.png";
+  static const String account = "assets/icons/account.png";
+  static const String notification = "assets/icons/notification.png";
+  static const String menu = "assets/icons/menu.png";
 }
