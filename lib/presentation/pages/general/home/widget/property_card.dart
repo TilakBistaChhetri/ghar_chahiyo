@@ -32,9 +32,10 @@ class PropertyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context)=> PropertyDescriptionPage()));
-
-
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => PropertyDescriptionPage()),
+        );
       },
       borderRadius: BorderRadius.circular(12),
       child: SizedBox(
@@ -83,15 +84,27 @@ class PropertyCard extends StatelessWidget {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          const Icon(Icons.bed, size: 16, color: Colors.black54),
+                          const Icon(
+                            Icons.bed,
+                            size: 16,
+                            color: Colors.black54,
+                          ),
                           const SizedBox(width: 4),
                           Text("$bedrooms"),
                           const SizedBox(width: 12),
-                          const Icon(Icons.bathtub_outlined, size: 16, color: Colors.black54),
+                          const Icon(
+                            Icons.bathtub_outlined,
+                            size: 16,
+                            color: Colors.black54,
+                          ),
                           const SizedBox(width: 4),
                           Text("$bathrooms"),
                           const SizedBox(width: 12),
-                          const Icon(Icons.home_outlined, size: 16, color: Colors.black54),
+                          const Icon(
+                            Icons.home_outlined,
+                            size: 16,
+                            color: Colors.black54,
+                          ),
                           const SizedBox(width: 4),
                           Text(type),
                         ],
@@ -99,7 +112,11 @@ class PropertyCard extends StatelessWidget {
                       const SizedBox(height: 6),
                       Row(
                         children: [
-                          const Icon(Icons.location_on_outlined, size: 16, color: Colors.black54),
+                          const Icon(
+                            Icons.location_on_outlined,
+                            size: 16,
+                            color: Colors.black54,
+                          ),
                           const SizedBox(width: 4),
                           Expanded(
                             child: Text(
@@ -117,7 +134,10 @@ class PropertyCard extends StatelessWidget {
                             height: 24,
                             child: OutlinedButton(
                               onPressed: onPhoneTap,
-                              child: const Text('Phone', style: TextStyle(fontSize: 10)),
+                              child: const Text(
+                                'Phone',
+                                style: TextStyle(fontSize: 10),
+                              ),
                             ),
                           ),
                           const SizedBox(width: 8),

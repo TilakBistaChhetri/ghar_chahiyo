@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../core/constants/my_colors.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -25,19 +24,20 @@ class CustomTextField extends StatelessWidget {
       obscureText: isPassword,
       keyboardType: keyboardType,
       decoration: InputDecoration(
-
         hintText: hintText,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-         ///  borderSide: const BorderSide(color: MyColors.secondaryColor),
-        
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: const BorderSide(color: MyColors.secondaryColor),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: const BorderSide(color: MyColors.secondaryColor),
-       
         ),
       ),
     );
   }
 }
+

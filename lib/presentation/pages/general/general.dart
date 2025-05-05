@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/activity/activity.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/add_posts/add_posts.dart';
-import 'package:ghar_chaiyo/presentation/pages/general/more/more.dart';
+import 'package:ghar_chaiyo/presentation/pages/general/account/account.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/home/home.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/new_projects/new_projects.dart';
 import '../../../core/constants/my_colors.dart';
@@ -22,15 +22,14 @@ class _GeneralState extends State<General> {
     TabItem(title: 'Activity', assetIconPath: 'assets/icons/activity.png'),
     TabItem(title: 'Add Posts', assetIconPath: 'assets/icons/add.png'),
     TabItem(title: 'New Projects', assetIconPath: 'assets/icons/newprojects.png'),
-    TabItem(title: 'More', assetIconPath: 'assets/icons/more.png'),
+    TabItem(title: 'Account', assetIconPath: 'assets/icons/account.png'),
   ];
-
   final List<Widget> pages = [
     HomePage(),
     ActivityPage(),
     AddPostsPage(),
     NewProjectsPage(),
-    MorePage(),
+    AccountPage(),
   ];
 
   @override

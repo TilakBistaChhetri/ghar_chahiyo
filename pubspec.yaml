@@ -49,6 +49,8 @@ dependencies:
   awesome_bottom_bar: ^1.2.4 # for buttom navi bar
   flutter_feather_icons: ^2.0.0+1 # for icons
   bottom_bar_with_sheet: ^2.4.0
+flutter_screenutil: ^5.9.3 # it helps to manage device screen 
+velocity_x: ^4.3.1
 
 dev_dependencies:
   flutter_test:

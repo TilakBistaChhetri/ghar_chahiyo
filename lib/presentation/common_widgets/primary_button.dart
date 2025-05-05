@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../core/constants/my_colors.dart';
 
-
-
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({
     super.key,
