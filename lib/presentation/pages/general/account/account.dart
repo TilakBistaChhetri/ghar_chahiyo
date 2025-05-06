@@ -59,65 +59,39 @@ class AccountPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8),
-            const SidebarMenuItem(title: 'My Dashboard', destination: MyDashboardPage()),
-              SizedBox(height: 20),
-            const SidebarMenuItem(title: 'Personational Information', destination:PersonalInformationPage()),
-              SizedBox(height: 20),
-            const SidebarMenuItem(title: 'Settings', destination: SettingPage()),
-              SizedBox(height: 20),
-            const SidebarMenuItem(title: 'Notifications', destination: NotificationPage()),
-              SizedBox(height: 20),
-            const SidebarMenuItem(title: 'Privacy Policy', destination: PrivacyPolicyPage()),
-              SizedBox(height: 20),
+            const SidebarMenuItem(
+              title: 'My Dashboard',
+              destination: MyDashboardPage(),
+            ),
+            SizedBox(height: 20),
+            const SidebarMenuItem(
+              title: 'Personational Information',
+              destination: PersonalInformationPage(),
+            ),
+            SizedBox(height: 20),
+            const SidebarMenuItem(
+              title: 'Settings',
+              destination: SettingPage(),
+            ),
+            SizedBox(height: 20),
+            const SidebarMenuItem(
+              title: 'Notifications',
+              destination: NotificationPage(),
+            ),
+            SizedBox(height: 20),
+            const SidebarMenuItem(
+              title: 'Privacy Policy',
+              destination: PrivacyPolicyPage(),
+            ),
+            SizedBox(height: 20),
             const SidebarMenuItem(title: 'Legal', destination: LegalPage()),
-              SizedBox(height: 20),
-            const SidebarMenuItem(title: 'Help & Support', destination: HelpSupportPage()),
-              SizedBox(height: 20),
+            SizedBox(height: 20),
+            const SidebarMenuItem(
+              title: 'Help & Support',
+              destination: HelpSupportPage(),
+            ),
+            SizedBox(height: 20),
             const SidebarMenuItem(title: 'Log Out', destination: LogOutPage()),
-         
-        
-        
-        
-            // Expanded(
-            //   child: ListView(
-            //     children: [
-            //       buildListTile(context, 'My Dashboard', const MyDashboardPage()),
-            //       buildListTile(
-            //         context,
-            //         'Personal Information',
-            //          PersonalInformationPage(),
-            //       ),
-            //       buildListTile(context, 'Favorites', const FavouritePage()),
-            //       buildListTile(context, 'Settings', const SettingPage()),
-            //       buildListTile(
-            //         context,
-            //         'Notifications',
-            //         const NotificationPage(),
-            //       ),
-            //       buildListTile(
-            //         context,
-            //         'Privacy Policy',
-            //         const PrivacyPolicyPage(),
-            //       ),
-            //       buildListTile(context, 'Legal', const LegalPage()),
-            //       buildListTile(
-            //         context,
-            //         'Help & Support',
-            //         const HelpSupportPage(),
-            //       ),
-            //       ListTile(
-            //         title: const Text(
-            //           'Log Out',
-            //           style: TextStyle(color: Colors.red),
-            //         ),
-            //         onTap: () {
-            //           // Add log out logic here
-            //           Navigator.pop(context);
-            //         },
-            //       ),
-            //     ],
-            //   ),
-            // ),
           ],
         ),
       ),

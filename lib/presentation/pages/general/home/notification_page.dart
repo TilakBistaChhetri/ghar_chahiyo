@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../core/constants/my_colors.dart';
 import '../../../../core/constants/my_icons.dart';
 import '../activity/widgets/filter_sheet.dart';
@@ -146,3 +145,142 @@ class NotificationPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import 'package:flutter/material.dart';
+
+// import '../../../../data/data_sources/local/notification_data_source.dart';
+// import '../../../../data/repository/notification_repository.dart';
+// import '../../../../domain/usecases/notification_usecases.dart';
+
+// class NotificationPage extends StatefulWidget {
+//   const NotificationPage({super.key});
+
+//   @override
+//   _NotificationPageState createState() => _NotificationPageState();
+// }
+
+// class _NotificationPageState extends State<NotificationPage> {
+//   bool _isLoading = false;
+//   List<Notification> _notifications = [];
+
+//   final NotificationUseCase _getNotificationsUseCase = GetNotificationsUseCase(
+//     NotificationRepositoryImpl(
+//       localDataSource: NotificationLocalDataSourceImpl(),
+//     ),
+//   );
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     _fetchNotifications();
+//   }
+
+//   Future<void> _fetchNotifications() async {
+//     setState(() {
+//       _isLoading = true;
+//     });
+    
+//     try {
+//       final notifications = await _getNotificationsUseCase.getNotifications();
+//       setState(() {
+//         _notifications = notifications;
+//         _isLoading = false;
+//       });
+//     } catch (e) {
+//       setState(() {
+//         _isLoading = false;
+//       });
+//       // Handle the error if needed
+//     }
+//   }
+
+//   // Function to map icon names to IconData
+//   IconData _getIcon(String iconName) {
+//     switch (iconName) {
+//       case 'new_releases':
+//         return Icons.new_releases;
+//       case 'local_offer':
+//         return Icons.local_offer;
+//       case 'star':
+//         return Icons.star;
+//       default:
+//         return Icons.notifications; // Default icon
+//     }
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.white,
+//         title: const Text('Notifications'),
+//         centerTitle: true,
+//       ),
+//       body: _isLoading
+//           ? const Center(child: CircularProgressIndicator())
+//           : ListView.builder(
+//               padding: const EdgeInsets.symmetric(horizontal: 16),
+//               itemCount: _notifications.length,
+//               itemBuilder: (context, index) {
+//                 final item = _notifications[index];
+//                 return Padding(
+//                   padding: const EdgeInsets.symmetric(vertical: 12),
+//                   child: Row(
+//                     crossAxisAlignment: CrossAxisAlignment.start,
+//                     children: [
+//                       CircleAvatar(
+//                         backgroundColor: Colors.grey[200],
+//                         child: Icon(_getIcon(item.icon), color: Colors.blue), // Use the mapped icon
+//                       ),
+//                       const SizedBox(width: 12),
+//                       Expanded(
+//                         child: Column(
+//                           crossAxisAlignment: CrossAxisAlignment.start,
+//                           children: [
+//                             Text(
+//                               item.title,
+//                               style: const TextStyle(
+//                                 fontWeight: FontWeight.bold,
+//                                 fontSize: 14,
+//                               ),
+//                             ),
+//                             const SizedBox(height: 10),
+//                             Text(
+//                               item.message,
+//                               style: const TextStyle(fontSize: 11),
+//                             ),
+//                           ],
+//                         ),
+//                       ),
+//                       const SizedBox(width: 8),
+//                       Text(
+//                         item.time,
+//                         style: const TextStyle(fontSize: 12, color: Colors.grey),
+//                       ),
+//                     ],
+//                   ),
+//                 );
+//               },
+//             ),
+//     );
+//   }
+// }

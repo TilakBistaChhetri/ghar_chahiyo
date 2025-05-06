@@ -9,7 +9,8 @@ class PersonalInformationPage extends StatefulWidget {
   const PersonalInformationPage({super.key});
 
   @override
-  State<PersonalInformationPage> createState() => _PersonalInformationPageState();
+  State<PersonalInformationPage> createState() =>
+      _PersonalInformationPageState();
 }
 
 class _PersonalInformationPageState extends State<PersonalInformationPage> {
@@ -17,7 +18,7 @@ class _PersonalInformationPageState extends State<PersonalInformationPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController numberController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-  
+
   Country? selectedCountry;
   List<String> selectedRoles = [];
   bool isTermsAccepted = false;
@@ -95,5 +96,3 @@ class _PersonalInformationPageState extends State<PersonalInformationPage> {
     );
   }
 }
-
-

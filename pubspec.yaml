@@ -53,6 +53,8 @@ flutter_screenutil: ^5.9.3 # it helps to manage device screen
 velocity_x: ^4.3.1
 shared_preferences: ^2.5.3
 image_picker: ^1.1.2 # for image 
+flutter_bloc: ^9.1.1
+bloc: ^9.0.0
 
 dev_dependencies:
   flutter_test:
