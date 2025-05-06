@@ -65,6 +65,13 @@ class NotificationPage extends StatelessWidget {
       backgroundColor: MyColors.backgroundColor,
       appBar: AppBar(
         backgroundColor: MyColors.backgroundColor,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
 
         title: const Text(
           'Notification',
@@ -90,22 +97,7 @@ class NotificationPage extends StatelessWidget {
           ),
         ],
       ),
-      // appBar: AppBar(
-      //   leading: const Icon(Icons.arrow_back, color: Colors.black),
-      //   backgroundColor: Colors.white,
-      //   elevation: 0,
-      //   centerTitle: true,
-      //   title: const Text(
-      //     'Notification',
-      //     style: TextStyle(color: Colors.black),
-      //   ),
-      //   actions: const [
-      //     Padding(
-      //       padding: EdgeInsets.only(right: 16),
-      //       child: Icon(Icons.more_vert, color: Colors.black),
-      //     ),
-      //   ],
-      // ),
+
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         itemCount: notifications.length,
@@ -118,7 +110,7 @@ class NotificationPage extends StatelessWidget {
               children: [
                 CircleAvatar(
                   backgroundColor: Colors.grey[200],
-                  child: Icon(item['icon'], color: Colors.indigo[900]),
+                  child: Icon(item['icon'], color: MyColors.primaryColor),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -128,14 +120,15 @@ class NotificationPage extends StatelessWidget {
                       Text(
                         item['title'],
                         style: const TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
+                          color: MyColors.primaryColor,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
                         ),
                       ),
-                      const SizedBox(height: 4),
+                      const SizedBox(height: 10),
                       Text(
                         item['message'],
-                        style: const TextStyle(fontSize: 14),
+                        style: const TextStyle(fontSize: 11),
                       ),
                     ],
                   ),

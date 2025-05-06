@@ -28,4 +28,7 @@ class MyIcons {
   static const String account = "assets/icons/account.png";
   static const String notification = "assets/icons/notification.png";
   static const String menu = "assets/icons/menu.png";
+  static const String star = "assets/icons/star.png";
+  static const String nproperty = "assets/icons/nproperty.png";
+  static const String exclusive = "assets/icons/exclusive.png";
 }

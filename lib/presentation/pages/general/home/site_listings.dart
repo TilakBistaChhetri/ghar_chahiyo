@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ghar_chaiyo/core/constants/my_icons.dart';
 
 import '../../../../core/constants/my_colors.dart';
+import '../activity/widgets/filter_sheet.dart';
 import 'widget/property_card.dart';
 
 class SiteListingPage extends StatelessWidget {
@@ -23,12 +24,17 @@ class SiteListingPage extends StatelessWidget {
         centerTitle: true,
         leading: const BackButton(color: Colors.black),
         actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16),
-            child: InkWell(
-              onTap: () {},
-              child: Image.asset(MyIcons.filter, height: 16, width: 16),
-            ),
+          IconButton(
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+                ),
+                builder: (context) => const FilterSheet(),
+              );
+            },
+            icon: Image.asset(MyIcons.filter, width: 16, height: 16),
           ),
         ],
       ),
