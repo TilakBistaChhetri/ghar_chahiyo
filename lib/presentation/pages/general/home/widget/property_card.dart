@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/constants/my_colors.dart';
+import '../../../../../core/constants/my_fonts.dart';
 import '../property_description.dart';
 
 class PropertyCard extends StatelessWidget {
@@ -31,12 +32,16 @@ class PropertyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onCardTap ?? () {
-          Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => PropertyDescriptionPage()),
-        );
-      },
+      onTap:
+          onCardTap ??
+          () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => PropertyDescriptionPage(),
+              ),
+            );
+          },
       borderRadius: BorderRadius.circular(12),
       child: SizedBox(
         height: 183,
@@ -64,7 +69,7 @@ class PropertyCard extends StatelessWidget {
                           : const Placeholder(
                             fallbackWidth: 150,
                             fallbackHeight: 150,
-                          ), // Placeholder when imagePath is null
+                          ),
                 ),
                 const SizedBox(width: 8),
                 Expanded(
@@ -75,7 +80,8 @@ class PropertyCard extends StatelessWidget {
                         price ?? 'Price not available',
                         style: const TextStyle(
                           color: MyColors.textColor,
-                          fontSize: 20,
+
+                          fontSize: AppFontSizes.heading,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -83,8 +89,9 @@ class PropertyCard extends StatelessWidget {
                       Text(
                         area ?? 'Area not specified',
                         style: const TextStyle(
-                          fontSize: 13,
-                          color: MyColors.textColor,
+                          fontSize: AppFontSizes.extraSmall,
+                          color: MyColors.black,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -93,7 +100,7 @@ class PropertyCard extends StatelessWidget {
                           const Icon(
                             Icons.bed,
                             size: 16,
-                            color: Colors.black54,
+                           color: MyColors.black,
                           ),
                           const SizedBox(width: 4),
                           Text("${bedrooms ?? 0}"), // Use default if null
@@ -101,7 +108,8 @@ class PropertyCard extends StatelessWidget {
                           const Icon(
                             Icons.bathtub_outlined,
                             size: 16,
-                            color: Colors.black54,
+                            color: MyColors.black,
+                            
                           ),
                           const SizedBox(width: 4),
                           Text("${bathrooms ?? 0}"), // Use default if null
@@ -109,7 +117,7 @@ class PropertyCard extends StatelessWidget {
                           const Icon(
                             Icons.home_outlined,
                             size: 16,
-                            color: Colors.black54,
+                            color: MyColors.black,
                           ),
                           const SizedBox(width: 4),
                           Text(type ?? 'Type not specified'),
@@ -127,18 +135,17 @@ class PropertyCard extends StatelessWidget {
                           Expanded(
                             child: Text(
                               location ?? 'Location not specified',
+                              style: TextStyle(fontSize: AppFontSizes.caption),
                               overflow: TextOverflow.ellipsis,
                             ),
                           ),
                         ],
                       ),
-                      // Removed Spacer here
-                      if (onPhoneTap != null ||
-                          onAgentTap != null) // Conditionally display buttons
+
+                      if (onPhoneTap != null || onAgentTap != null)
                         Row(
                           children: [
-                            if (onPhoneTap !=
-                                null) // Show only if onPhoneTap is provided
+                            if (onPhoneTap != null)
                               SizedBox(
                                 width: 80,
                                 height: 24,
@@ -146,13 +153,15 @@ class PropertyCard extends StatelessWidget {
                                   onPressed: onPhoneTap,
                                   child: const Text(
                                     'Phone',
-                                    style: TextStyle(fontSize: 10),
+                                    style: TextStyle(
+                                      fontSize: AppFontSizes.caption,
+                                    ),
                                   ),
                                 ),
                               ),
                             const SizedBox(width: 8),
                             if (onAgentTap !=
-                                null) // Show only if onAgentTap is provided
+                                null) 
                               SizedBox(
                                 width: 80,
                                 height: 24,
@@ -162,7 +171,12 @@ class PropertyCard extends StatelessWidget {
                                     backgroundColor: MyColors.primaryColor,
                                     foregroundColor: Colors.white,
                                   ),
-                                  child: const Text('Call Agent'),
+                                  child: const Text(
+                                    'Call',
+                                    style: TextStyle(
+                                      fontSize: AppFontSizes.caption,
+                                    ),
+                                  ),
                                 ),
                               ),
                           ],

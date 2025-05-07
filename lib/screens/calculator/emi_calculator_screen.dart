@@ -14,13 +14,12 @@ class EMICalculatorScreen extends StatefulWidget {
 
 class _EMICalculatorScreenState extends State<EMICalculatorScreen>
     with TickerProviderStateMixin {
-  // Changed from SingleTickerProviderStateMixin
-  // Default values
+ 
   double loanAmount = 8000000; // 80 lakhs
   double interestRate = 8.5; // 8.5%
   double loanTenure = 30; // 30 years
 
-  // Tab controller for year tabs
+
   late TabController _tabController;
 
   // Years list for tabs
@@ -466,7 +465,6 @@ class _EMICalculatorScreenState extends State<EMICalculatorScreen>
 
                               const SizedBox(height: 24),
 
-                              // Interest
                               Row(
                                 children: [
                                   Container(
@@ -499,7 +497,7 @@ class _EMICalculatorScreenState extends State<EMICalculatorScreen>
               ),
             ),
 
-            // Repayment Schedule Section
+           
             Container(
               width: double.infinity,
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -517,7 +515,7 @@ class _EMICalculatorScreenState extends State<EMICalculatorScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Header
+                 
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(16),
@@ -700,7 +698,7 @@ class _EMICalculatorScreenState extends State<EMICalculatorScreen>
   }
 }
 
-// Model class for monthly repayment data
+
 class MonthlyRepayment {
   final String month;
   final double beginningBalance;

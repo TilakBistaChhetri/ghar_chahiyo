@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/my_colors.dart';
 
-class CustomTextField extends StatelessWidget {
+  class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
   final bool isPassword;
@@ -40,4 +40,10 @@ class CustomTextField extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
 

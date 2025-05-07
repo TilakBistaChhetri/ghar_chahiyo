@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ghar_chaiyo/presentation/pages/splash/splash.dart';
 // import 'package:flutter/scheduler.dart';
 // import 'package:flutter/services.dart';
+import 'screens/calculator/emi_calculator_screen.dart';
 import 'theme/theme.dart';
 import 'screens/home/home_screen.dart';
 import 'screens/properties/search_results_screen.dart';
@@ -21,8 +22,8 @@ class MyApp extends StatelessWidget {
       title: 'Ghar Chaiyo',
       theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      //home: const HomeScreen(),
-      home:const Splash(),
+      // home: const EMICalculatorScreen(),
+     home:const Splash(),
 
       // Define your routes
       routes: {

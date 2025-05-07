@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants/my_colors.dart';
+import '../../../../../core/constants/my_fonts.dart';
 
 class RegisterTypeSelector extends StatefulWidget {
   final Function(List<String>) onSelectionChanged;
@@ -57,7 +58,7 @@ class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
       children: [
         const Text(
           "I want to register as",
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+          style: TextStyle(fontSize: AppFontSizes.small, fontWeight: FontWeight.w500),
         ),
         const SizedBox(height: 16),
         ..._roles.entries.map((entry) {
@@ -80,7 +81,7 @@ class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
         const SizedBox(height: 16),
         _buildCheckboxTile(
           value: _termsAccepted,
-          label: '“I agree to the Terms and Conditions & Privacy Policy”',
+          label: '“I agree to the Terms and Conditions & Privacy Policy”', 
           iconPath: "assets/icons/terms.png", 
           onChanged: (val) {
             setState(() {

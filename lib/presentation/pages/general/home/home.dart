@@ -4,6 +4,7 @@ import 'package:ghar_chaiyo/presentation/pages/general/home/notification_page.da
 import '../../../../core/constants/my_assets.dart';
 import '../../../../core/constants/my_colors.dart';
 import '../../../../core/constants/my_icons.dart';
+import 'home_loan.dart';
 import 'site_listings.dart';
 import 'widget/icon_menu_item.dart';
 
@@ -109,7 +110,7 @@ class HomePage extends StatelessWidget {
                         iconPath: MyIcons.homeloan,
                         label: 'Home \n Loan',
                         onTap: () {
-                          print('Home Loan tapped');
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeLoanPage()));
                         },
                       ),
                       IconMenuItem(
