@@ -224,7 +224,6 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/my_colors.dart';
-import '../../../../core/constants/my_fonts.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({super.key});

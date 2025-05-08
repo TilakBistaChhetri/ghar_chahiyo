@@ -1,22 +1,46 @@
 // import 'package:flutter/material.dart';
 
 // import '../../../../core/constants/my_colors.dart';
+// import 'contact_us.dart';
 // import 'widgets/side_bar_menu_item.dart';
 
-
-// class SettingPage extends StatelessWidget {
+// class SettingPage extends StatefulWidget {
 //   const SettingPage({super.key});
-//     bool isPushNotificationsEnabled = false;
+
+//   @override
+//   _SettingPageState createState() => _SettingPageState();
+// }
+
+// class _SettingPageState extends State<SettingPage> {
+//   bool isPushNotificationsEnabled = false;
 
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-     
-//       body: Column(
-//         children: [
-//           SizedBox(height: 12),
+//       appBar: AppBar(
+//         backgroundColor: MyColors.white,
+//         leading: IconButton(
+//           icon: const Icon(Icons.arrow_back, color: Colors.black),
+//           onPressed: () {
+//             Navigator.pop(context);
+//           },
+//         ),
+//         title: const Text(
+//           'Settings',
+//           style: TextStyle(
+//             fontSize: 20,
+//             color: MyColors.dividerColor,
+//             fontWeight: FontWeight.bold,
+//           ),
+//         ),
+//         centerTitle: true,
+//       ),
+//       body: Padding(
+//         padding: const EdgeInsets.all(8.0),
+//         child: Column(
+//           children: [
+//             SizedBox(height: 12),
 //             ListTile(
-//               contentPadding: EdgeInsets.zero,
 //               title: const Text('Push Notifications'),
 //               trailing: Switch(
 //                 value: isPushNotificationsEnabled,
@@ -27,50 +51,48 @@
 //                 },
 //               ),
 //             ),
-//           const SidebarMenuItem(
-//             title: 'About',
-//             // destination: MyDashboardPage(),
-//           ),
-//           SizedBox(height: 20),
-//           const SidebarMenuItem(
-//             title: 'History',
-//             // destination: MyDashboardPage(),
-//           ),
-//           SizedBox(height: 20),
-//           const SidebarMenuItem(
-//             title: 'Saved Search',
-//             // destination: MyDashboardPage(),
-//           ),
-//           SizedBox(height: 20),
-//           const SidebarMenuItem(
-//             title: 'Contact Us',
-//             // destination: MyDashboardPage(),
-//           ),
-//           SizedBox(height: 20),
-//           const SidebarMenuItem(
-//             title: 'Shared the App',
-//             // destination: MyDashboardPage(),
-//           ),
-//           SizedBox(height: 20),
-//           const SidebarMenuItem(
-//             title: 'Terms & Condition',
-//             // destination: MyDashboardPage(),
-//           ),
-//           SizedBox(height: 20),
-//           const SidebarMenuItem(
-//             title: 'Delete Account',
-//             // destination: MyDashboardPage(),
-//           ),
-//         ],
+//             SizedBox(height: 10),
+//             const SidebarMenuItem(
+//               title: 'About',
+//               // destination: MyDashboardPage(),
+//             ),
+//             SizedBox(height: 10),
+//             const SidebarMenuItem(
+//               title: 'History',
+//               // destination: MyDashboardPage(),
+//             ),
+
+//             SizedBox(height: 10),
+//             SidebarMenuItem(title: 'Contact Us', destination: ContactUsPage()),
+//             SizedBox(height: 10),
+//             const SidebarMenuItem(
+//               title: 'Shared the App',
+//               // destination: MyDashboardPage(),
+//             ),
+//             SizedBox(height: 10),
+//             const SidebarMenuItem(
+//               title: 'Terms & Condition',
+//               // destination: MyDashboardPage(),
+//             ),
+//             SizedBox(height: 10),
+//             const SidebarMenuItem(
+//               title: 'Delete Account',
+//               textColor: MyColors.red,
+//               // destination: MyDashboardPage(),
+//             ),
+//           ],
+//         ),
 //       ),
 //     );
 //   }
 // }
 
-
 import 'package:flutter/material.dart';
-
+import 'package:ghar_chaiyo/presentation/pages/general/account/about_us.dart';
 import '../../../../core/constants/my_colors.dart';
+import '../../../../core/constants/my_fonts.dart';
+import '../../../../core/constants/my_icons.dart';
+import 'contact_us.dart';
 import 'widgets/side_bar_menu_item.dart';
 
 class SettingPage extends StatefulWidget {
@@ -86,13 +108,11 @@ class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: AppBar(
+      appBar: AppBar(
         backgroundColor: MyColors.white,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          onPressed: () => Navigator.pop(context),
         ),
         title: const Text(
           'Settings',
@@ -104,62 +124,139 @@ class _SettingPageState extends State<SettingPage> {
         ),
         centerTitle: true,
       ),
-      body:Padding(
+      body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-            children: [
-               SizedBox(height:12),
-              ListTile(
-              
-                title: const Text('Push Notifications'),
-                trailing: Switch(
-                  value: isPushNotificationsEnabled,
-                  onChanged: (bool value) {
-                    setState(() {
-                      isPushNotificationsEnabled = value;
-                    });
-                  },
-                ),
+          children: [
+            const SizedBox(height: 12),
+            ListTile(
+              title: const Text('Push Notifications'),
+              trailing: Switch(
+                value: isPushNotificationsEnabled,
+                onChanged: (bool value) {
+                  setState(() {
+                    isPushNotificationsEnabled = value;
+                  });
+                },
               ),
-              SizedBox(height:20),
-               const SidebarMenuItem(
-              title: 'About',
-              // destination: MyDashboardPage(),
             ),
-            SizedBox(height: 20),
-            const SidebarMenuItem(
-              title: 'History',
-              // destination: MyDashboardPage(),
-            ),
-            SizedBox(height: 20),
-            const SidebarMenuItem(
-              title: 'Saved Search',
-              // destination: MyDashboardPage(),
-            ),
-            SizedBox(height: 20),
-            const SidebarMenuItem(
-              title: 'Contact Us',
-              // destination: MyDashboardPage(),
-            ),
-            SizedBox(height: 20),
-            const SidebarMenuItem(
-              title: 'Shared the App',
-              // destination: MyDashboardPage(),
-            ),
-            SizedBox(height: 20),
-            const SidebarMenuItem(
-              title: 'Terms & Condition',
-              // destination: MyDashboardPage(),
-            ),
-            SizedBox(height: 20),
-            const SidebarMenuItem(
+            const SizedBox(height: 10),
+            const SidebarMenuItem(title: 'About', destination:AboutUsPage()),
+            const SizedBox(height: 10),
+            const SidebarMenuItem(title: 'History'),
+            const SizedBox(height: 10),
+            SidebarMenuItem(title: 'Contact Us', destination: ContactUsPage()),
+            const SizedBox(height: 10),
+            const SidebarMenuItem(title: 'Shared the App'),
+            const SizedBox(height: 10),
+            const SidebarMenuItem(title: 'Terms & Condition'),
+            const SizedBox(height: 10),
+
+            SidebarMenuItem(
               title: 'Delete Account',
-              // destination: MyDashboardPage(),
+              textColor: MyColors.red,
+              onTap: () => _showDeleteConfirmationDialog(context),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showDeleteConfirmationDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder:
+          (_) => AlertDialog(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            title: const Text(
+              'Delete Account',
+              style: TextStyle(
+                color: MyColors.red,
+                fontWeight: FontWeight.bold,
+                fontSize: AppFontSizes.medium,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            content: const Text(
+              'Are you sure you want to delete this account?',
+              style: TextStyle(
+                color: MyColors.primaryColor,
+                fontSize: AppFontSizes.normal,
+                fontWeight:FontWeight.bold
+              ),
+              textAlign: TextAlign.center,
+            ),
+            actionsAlignment: MainAxisAlignment.spaceEvenly,
+            actions: [
+              ElevatedButton(
+                onPressed: () => Navigator.pop(context),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: MyColors.backgroundColor,
+                  foregroundColor: MyColors.black,
+                  side: BorderSide(color: MyColors.black),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(55),
+                  ),
+                ),
+                child: const Text('Cancel', style:TextStyle(fontSize:AppFontSizes.small, color:MyColors.primaryColor)),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context); // Close confirmation
+                  _showAccountDeletedDialog(context); // Show success
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor:MyColors.primaryColor,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(55),
+                  ),
+                ),
+                child: const Text('Delete', style:TextStyle(fontSize:AppFontSizes.small,color:MyColors.white)),
+              ),
             ],
           ),
-      ),
-      
+    );
+  }
+
+  void _showAccountDeletedDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder:
+          (_) => AlertDialog(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(MyIcons.delete, height: 56, width:48),
+                const SizedBox(height: 16),
+                const Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Your Account has been ',
+                        style: TextStyle(fontSize: AppFontSizes.normal, color: MyColors.primaryColor, fontWeight:FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text: 'Deleted!!',
+                        style: TextStyle(
+                          fontSize: AppFontSizes.normal,
+                          color: MyColors.red,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
     );
   }
 }

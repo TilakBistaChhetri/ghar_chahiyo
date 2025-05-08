@@ -31,4 +31,13 @@ class MyIcons {
   static const String star = "assets/icons/star.png";
   static const String nproperty = "assets/icons/nproperty.png";
   static const String exclusive = "assets/icons/exclusive.png";
+
+  static const String facebook = "assets/icons/facebook.png";
+  static const String instragram = "assets/icons/instragram.png";
+  static const String whatsapp = "assets/icons/whatsapp.png";
+  static const String twitter = "assets/icons/twitter.png";
+  static const String website = "assets/icons/website.png";
+  static const String customer = "assets/icons/customer.png";
+  static const String delete = "assets/icons/delete.png";
+  static const String help = "assets/icons/help.png";
 }
