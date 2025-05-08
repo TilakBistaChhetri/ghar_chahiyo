@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../../core/constants/my_colors.dart';
 import '../../core/constants/my_fonts.dart';
 
-class PrimaryButton extends StatelessWidget {
-  const PrimaryButton({
+class SubOutlineButton extends StatelessWidget {
+  const SubOutlineButton({
     super.key,
     required this.title,
     required this.onPressed,
@@ -19,20 +19,20 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 353,  
-      height: 41, 
+      width: 176,  
+      height: 43, 
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: MyColors.primaryColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          backgroundColor: MyColors.secondaryColor,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(55)),
         ),
         child: Text(
           title,
           style: TextStyle(
-            color: MyColors.white,
+            color: MyColors.primaryColor,
             fontSize: AppFontSizes.normal,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ),

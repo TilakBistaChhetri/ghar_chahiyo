@@ -168,6 +168,7 @@ class ActivityPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: MyColors.white,
+
         title: const Text(
           'Activity',
           style: TextStyle(
@@ -192,7 +193,6 @@ class ActivityPage extends StatelessWidget {
             icon: Image.asset(MyIcons.filter, width: 16, height: 16),
           ),
         ],
- 
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(8),

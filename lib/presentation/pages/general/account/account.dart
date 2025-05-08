@@ -80,7 +80,7 @@ class AccountPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             const SidebarMenuItem(
-              title: 'Privacy Policy',
+              title: 'Privacy & Policy',
               destination: PrivacyPolicyPage(),
             ),
             SizedBox(height: 20),

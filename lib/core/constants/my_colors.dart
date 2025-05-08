@@ -15,4 +15,5 @@ class MyColors {
   static const Color black = Color(0xFF1C1C1C);
 
   static const Color red = Color(0xFFD00000);
+
 }

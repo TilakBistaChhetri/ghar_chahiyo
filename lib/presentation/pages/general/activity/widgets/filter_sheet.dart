@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants/my_colors.dart';
+import '../../../../../core/constants/my_fonts.dart';
 
 class FilterSheet extends StatefulWidget {
   const FilterSheet({super.key});
@@ -24,8 +25,8 @@ class _FilterSheetState extends State<FilterSheet> {
           const Text(
             'Filter',
             style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+              fontSize: AppFontSizes.heading,
+              fontWeight: FontWeight.w600,
               color: MyColors.primaryColor,
             ),
           ),
@@ -51,7 +52,10 @@ class _FilterSheetState extends State<FilterSheet> {
             alignment: Alignment.centerLeft,
             child: Text(
               'Property Type',
-              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: AppFontSizes.normal,
+              ),
             ),
           ),
           const SizedBox(height: 10),
@@ -91,10 +95,9 @@ class _FilterSheetState extends State<FilterSheet> {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pop(context); // Just close sheet on Apply
+                    Navigator.pop(context);
                   },
                   style: ElevatedButton.styleFrom(
-                    // backgroundColor: Colors.indigo[900],
                     backgroundColor: MyColors.primaryColor,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(55),
@@ -145,7 +148,7 @@ class _FilterSheetState extends State<FilterSheet> {
         child: Text(
           text,
           style: TextStyle(
-            color: selected ? Colors.white : Colors.black,
+            color: selected ? MyColors.white : MyColors.black,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -165,7 +168,7 @@ class _FilterSheetState extends State<FilterSheet> {
         ),
         child: Text(
           text,
-          style: TextStyle(color: selected ? Colors.white : Colors.black),
+          style: TextStyle(color: selected ? MyColors.white : MyColors.black),
         ),
       ),
     );

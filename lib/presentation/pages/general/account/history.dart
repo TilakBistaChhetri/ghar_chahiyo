@@ -1,34 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:ghar_chaiyo/core/constants/my_fonts.dart';
+import 'package:ghar_chaiyo/core/constants/my_icons.dart';
 
 import '../../../../core/constants/my_colors.dart';
-import '../../../../core/constants/my_fonts.dart';
-import '../../../../core/constants/my_icons.dart';
 import '../activity/widgets/filter_sheet.dart';
 import '../home/widget/property_card.dart';
 
-class NewProjectsPage extends StatefulWidget {
-  const NewProjectsPage({super.key});
+class HistoryPage extends StatelessWidget {
+  HistoryPage({super.key});
 
-  @override
-  State<NewProjectsPage> createState() => _NewProjectsPageState();
-}
-
-class _NewProjectsPageState extends State<NewProjectsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: MyColors.white,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pop(context),
+        ),
         title: const Text(
-          'New Projects',
+          'History',
           style: TextStyle(
-            fontSize: AppFontSizes.title,
+            fontSize: AppFontSizes.heading,
+
+            color: MyColors.dividerColor,
             fontWeight: FontWeight.bold,
-            color: MyColors.textColor,
           ),
         ),
+
         centerTitle: true,
-        leading: const BackButton(color: Colors.black),
         actions: [
           IconButton(
             onPressed: () {
@@ -52,8 +52,8 @@ class _NewProjectsPageState extends State<NewProjectsPage> {
               imagePath: 'assets/images/house.png',
               price: 'Rs. 1,50,000',
               area: '1800sqft',
-              bedrooms: 1,
-              bathrooms: 2,
+              bedrooms: 2,
+              bathrooms: 1,
               type: 'Villa',
               location: 'Kathmandu, Nepal',
               onPhoneTap: () => print('Phone tapped for item $index'),

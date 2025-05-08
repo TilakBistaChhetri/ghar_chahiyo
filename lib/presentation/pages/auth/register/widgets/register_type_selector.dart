@@ -20,30 +20,22 @@ class RegisterTypeSelector extends StatefulWidget {
 class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
   final Map<String, Map<String, dynamic>> _roles = {
     "Individual Agent": {
-      "selected": true,
+      "selected": false,
       "icon": "assets/icons/individual.png",
     },
-    "Agency/Company": {
-      "selected": false,
-      "icon": "assets/icons/agency.png",
-    },
-    "Home Owner": {
-      "selected": true,
-      "icon": "assets/icons/homeowner.png",
-    },
-    "Builder": {
-      "selected": true,
-      "icon": "assets/icons/builder.png",
-    },
+    "Agency/Company": {"selected": false, "icon": "assets/icons/agency.png"},
+    "Home Owner": {"selected": false, "icon": "assets/icons/homeowner.png"},
+    "Builder": {"selected": false, "icon": "assets/icons/builder.png"},
   };
 
   bool _termsAccepted = true;
 
   void _notifyRoleChange() {
-    final selectedRoles = _roles.entries
-        .where((entry) => entry.value["selected"] == true)
-        .map((entry) => entry.key)
-        .toList();
+    final selectedRoles =
+        _roles.entries
+            .where((entry) => entry.value["selected"] == true)
+            .map((entry) => entry.key)
+            .toList();
     widget.onSelectionChanged(selectedRoles);
   }
 
@@ -58,7 +50,10 @@ class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
       children: [
         const Text(
           "I want to register as",
-          style: TextStyle(fontSize: AppFontSizes.small, fontWeight: FontWeight.w500),
+          style: TextStyle(
+            fontSize: AppFontSizes.small,
+            fontWeight: FontWeight.w500,
+          ),
         ),
         const SizedBox(height: 16),
         ..._roles.entries.map((entry) {
@@ -72,6 +67,11 @@ class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
             iconPath: iconPath,
             onChanged: (val) {
               setState(() {
+                _roles.updateAll((key, value) {
+                  value["selected"] = false;
+                  return value;
+                });
+
                 _roles[label]!["selected"] = val;
               });
               _notifyRoleChange();
@@ -81,8 +81,8 @@ class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
         const SizedBox(height: 16),
         _buildCheckboxTile(
           value: _termsAccepted,
-          label: '“I agree to the Terms and Conditions & Privacy Policy”', 
-          iconPath: "assets/icons/terms.png", 
+          label: '“I agree to the Terms and Conditions & Privacy Policy”',
+          iconPath: "assets/icons/terms.png",
           onChanged: (val) {
             setState(() {
               _termsAccepted = val;
@@ -117,19 +117,16 @@ class _RegisterTypeSelectorState extends State<RegisterTypeSelector> {
               iconPath,
               width: 16,
               height: 16,
-              errorBuilder: (_, __, ___) =>
-                  const Icon(Icons.image_not_supported),
+              errorBuilder:
+                  (_, __, ___) => const Icon(Icons.image_not_supported),
             ),
             const SizedBox(width: 12),
-            Expanded(
-              child: Text(
-                label,
-                style: const TextStyle(fontSize: 15),
-              ),
-            ),
+            Expanded(child: Text(label, style: const TextStyle(fontSize: 15))),
           ],
         ),
       ),
     );
   }
 }
+
+

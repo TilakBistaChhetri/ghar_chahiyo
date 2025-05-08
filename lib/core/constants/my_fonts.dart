@@ -7,5 +7,7 @@ class AppFontSizes {
   static const double small = 14;
   static const double extraSmall = 12;
   static const double tiny = 11;
+    static const double extraTiny = 11;
   static const double caption = 10;
+  
 }

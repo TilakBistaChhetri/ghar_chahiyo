@@ -10,6 +10,7 @@ class MyIcons {
   static const String filter = "assets/icons/filter.png";
   static const String bed = "assets/icons/bed.png";
   static const String bathroom = "assets/icons/bathroom.png";
+    static const String villa = "assets/icons/villa.png";
   static const String kitchen = "assets/icons/kitchen.png";
   static const String sqft = "assets/icons/sqft.png";
   static const String message = "assets/icons/message.png";

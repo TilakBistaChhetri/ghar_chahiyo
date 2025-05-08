@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/constants/my_colors.dart';
 import '../../../../../core/constants/my_fonts.dart';
+import '../../../../../core/constants/my_icons.dart';
 import '../property_description.dart';
 
 class PropertyCard extends StatelessWidget {
@@ -62,8 +63,8 @@ class PropertyCard extends StatelessWidget {
                       imagePath != null
                           ? Image.asset(
                             imagePath!,
-                            height: double.infinity,
-                            width: 150,
+                            height: 156,
+                            width: 153,
                             fit: BoxFit.cover,
                           )
                           : const Placeholder(
@@ -71,7 +72,7 @@ class PropertyCard extends StatelessWidget {
                             fallbackHeight: 150,
                           ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,50 +81,101 @@ class PropertyCard extends StatelessWidget {
                         price ?? 'Price not available',
                         style: const TextStyle(
                           color: MyColors.textColor,
-
                           fontSize: AppFontSizes.heading,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                      const SizedBox(height: 4),
+
                       Text(
                         area ?? 'Area not specified',
                         style: const TextStyle(
                           fontSize: AppFontSizes.extraSmall,
                           color: MyColors.black,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                      const SizedBox(height: 4),
+                      const SizedBox(height: 5),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(color: Colors.grey),
+                            ),
+                            constraints: BoxConstraints(
+                              minWidth: 90,
+                              minHeight: 20,
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Semi Funished",
+                                style: TextStyle(
+                                  fontSize: AppFontSizes.extraTiny,
+                                  fontWeight: FontWeight.w900,
+                                  color: Colors.grey[600],
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          const SizedBox(width: 10),
+
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(color: Colors.grey),
+                            ),
+                            constraints: BoxConstraints(
+                              minWidth: 50,
+                              minHeight: 20,
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Sale",
+                                style: TextStyle(
+                                  fontSize: AppFontSizes.extraTiny,
+                                  fontWeight: FontWeight.w900,
+                                  color: Colors.grey[600],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 4),
                       Row(
                         children: [
-                          const Icon(
-                            Icons.bed,
-                            size: 16,
-                           color: MyColors.black,
-                          ),
                           const SizedBox(width: 4),
-                          Text("${bedrooms ?? 0}"), // Use default if null
+                          Text("${bathrooms ?? 0}"),
+                          const SizedBox(width: 4),
+                          Image.asset(MyIcons.bathroom, width: 12, height: 12),
+
                           const SizedBox(width: 12),
-                          const Icon(
-                            Icons.bathtub_outlined,
-                            size: 16,
-                            color: MyColors.black,
-                            
-                          ),
+
+                          Text("${bedrooms ?? 0}"),
                           const SizedBox(width: 4),
-                          Text("${bathrooms ?? 0}"), // Use default if null
+                          Image.asset(MyIcons.bed, width: 12, height: 12),
+
                           const SizedBox(width: 12),
-                          const Icon(
-                            Icons.home_outlined,
-                            size: 16,
-                            color: MyColors.black,
-                          ),
+
+                          Text(
+                            "${bathrooms ?? 0}",
+                          ), // Some other count or property
                           const SizedBox(width: 4),
+                          Image.asset(
+                            MyIcons.villa,
+                            width: 12,
+                            height: 12,
+                          ), // Villa icon
+
+                          const SizedBox(width: 12),
+
                           Text(type ?? 'Type not specified'),
                         ],
                       ),
-                      const SizedBox(height: 6),
+
                       Row(
                         children: [
                           const Icon(
@@ -135,51 +187,66 @@ class PropertyCard extends StatelessWidget {
                           Expanded(
                             child: Text(
                               location ?? 'Location not specified',
-                              style: TextStyle(fontSize: AppFontSizes.caption),
-                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontSize: AppFontSizes.caption,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ),
                         ],
                       ),
+                      SizedBox(height: 5),
 
                       if (onPhoneTap != null || onAgentTap != null)
-                        Row(
-                          children: [
-                            if (onPhoneTap != null)
-                              SizedBox(
-                                width: 80,
-                                height: 24,
-                                child: OutlinedButton(
-                                  onPressed: onPhoneTap,
-                                  child: const Text(
-                                    'Phone',
-                                    style: TextStyle(
-                                      fontSize: AppFontSizes.caption,
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8),
+                          child: Row(
+                            children: [
+                              if (onPhoneTap != null)
+                                SizedBox(
+                                  width: 80,
+                                  height: 24,
+                                  child: OutlinedButton(
+                                    style: OutlinedButton.styleFrom(
+                                      padding: EdgeInsets.zero,
+                                    ),
+                                    onPressed: onPhoneTap,
+                                    child: const Center(
+                                      child: Text(
+                                        'Phone No.',
+                                        style: TextStyle(
+                                          fontSize: AppFontSizes.caption,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                            const SizedBox(width: 8),
-                            if (onAgentTap !=
-                                null) 
-                              SizedBox(
-                                width: 80,
-                                height: 24,
-                                child: ElevatedButton(
-                                  onPressed: onAgentTap,
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: MyColors.primaryColor,
-                                    foregroundColor: Colors.white,
-                                  ),
-                                  child: const Text(
-                                    'Call',
-                                    style: TextStyle(
-                                      fontSize: AppFontSizes.caption,
+                              const SizedBox(width: 8),
+                              if (onAgentTap != null)
+                                SizedBox(
+                                  width: 80,
+                                  height: 24,
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.zero,
+                                      backgroundColor: MyColors.primaryColor,
+                                      foregroundColor: Colors.white,
+                                    ),
+                                    onPressed: onAgentTap,
+                                    child: const Center(
+                                      child: Text(
+                                        'Call Agent',
+                                        style: TextStyle(
+                                          fontSize: AppFontSizes.caption,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                          ],
+                            ],
+                          ),
                         ),
                     ],
                   ),
