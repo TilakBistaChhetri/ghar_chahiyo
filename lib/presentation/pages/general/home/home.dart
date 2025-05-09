@@ -901,14 +901,14 @@ class _HomePageState extends State<HomePage> {
                         color: MyColors.primaryColor,
                       ),
                     ),
-                    Text(
-                      "See all",
-                      style: TextStyle(
-                        fontSize: AppFontSizes.extraSmall,
-                        color: MyColors.primaryColor,
-                        decoration: TextDecoration.underline,
-                      ),
-                    ),
+                    // Text(
+                    //   "See all",
+                    //   style: TextStyle(
+                    //     fontSize: AppFontSizes.extraSmall,
+                    //     color: MyColors.primaryColor,
+                    //     decoration: TextDecoration.underline,
+                    //   ),
+                    // ),
                   ],
                 ),
                 const SizedBox(height: 24),
@@ -984,14 +984,14 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(height: 12),
-                Text(
-                  "See all",
-                  style: TextStyle(
-                    fontSize: AppFontSizes.extraSmall,
-                    color: MyColors.primaryColor,
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
+                // Text(
+                //   "See all",
+                //   style: TextStyle(
+                //     fontSize: AppFontSizes.extraSmall,
+                //     color: MyColors.primaryColor,
+                //     decoration: TextDecoration.underline,
+                //   ),
+                // ),
                 const SizedBox(height: 12),
                 const Divider(color: MyColors.dividerColor, thickness: 5),
                 const SizedBox(height: 24),
@@ -1006,15 +1006,15 @@ class _HomePageState extends State<HomePage> {
                         color: MyColors.textColor,
                       ),
                     ),
-                    Text(
-                      "View All",
-                      style: TextStyle(
-                        fontSize: AppFontSizes.extraSmall,
-                        fontWeight: FontWeight.w500,
-                        color: MyColors.textColor,
-                        decoration: TextDecoration.underline,
-                      ),
-                    ),
+                    // Text(
+                    //   "View All",
+                    //   style: TextStyle(
+                    //     fontSize: AppFontSizes.extraSmall,
+                    //     fontWeight: FontWeight.w500,
+                    //     color: MyColors.textColor,
+                    //     decoration: TextDecoration.underline,
+                    //   ),
+                    // ),
                   ],
                 ),
                 const SizedBox(height: 12),

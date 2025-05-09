@@ -204,6 +204,7 @@ import '../../../../core/constants/my_colors.dart';
 import '../../../../core/constants/my_fonts.dart';
 import '../../../../core/constants/my_icons.dart';
 import 'history.dart';
+import 'termsconditon.dart';
 import 'widgets/side_bar_menu_item.dart';
 
 class SettingPage extends StatefulWidget {
@@ -261,7 +262,7 @@ class _SettingPageState extends State<SettingPage> {
               onTap: () => _showShareDialog(context),
             ),
             const SizedBox(height: 10),
-            const SidebarMenuItem(title: 'Terms & Condition'),
+            const SidebarMenuItem(title: 'Terms & Condition', destination: TermsconditonPage()),
             const SizedBox(height: 10),
             SidebarMenuItem(
               title: 'Delete Account',

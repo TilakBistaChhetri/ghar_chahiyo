@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:ghar_chaiyo/core/constants/my_fonts.dart';
+import 'package:ghar_chaiyo/presentation/pages/general/home/property_description.dart';
 
 class NewProjectCard extends StatelessWidget {
   final image;
@@ -17,50 +18,56 @@ class NewProjectCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 110,
-      width: 103,
-      child: Card(
-        elevation: 0,
-        child: Padding(
-          padding: const EdgeInsets.only(left: 2),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: ClipOval(
-                  child: Image.asset(
-                    image,
-                    fit: BoxFit.fill,
-                    height: 43,
-                    width: 43,
+    return InkWell(
+      onTap:() {
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> PropertyDescriptionPage()));
+
+      },
+      child: Container(
+        height: 110,
+        width: 103,
+        child: Card(
+          elevation: 0,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 2),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(
+                  child: ClipOval(
+                    child: Image.asset(
+                      image,
+                      fit: BoxFit.fill,
+                      height: 43,
+                      width: 43,
+                    ),
                   ),
                 ),
-              ),
-              Text(
-                location,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontSize: AppFontSizes.extraSmall,
-                  fontWeight: FontWeight.w700,
+                Text(
+                  location,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    fontSize: AppFontSizes.extraSmall,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
-              ),
-              Text(
-                district,
-                style: TextStyle(
-                  fontSize: AppFontSizes.tiny,
-                  fontWeight: FontWeight.w300,
+                Text(
+                  district,
+                  style: TextStyle(
+                    fontSize: AppFontSizes.tiny,
+                    fontWeight: FontWeight.w300,
+                  ),
                 ),
-              ),
-              Text(
-                price,
-                style: TextStyle(
-                  fontSize: AppFontSizes.extraSmall,
-                  fontWeight: FontWeight.w500,
+                Text(
+                  price,
+                  style: TextStyle(
+                    fontSize: AppFontSizes.extraSmall,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

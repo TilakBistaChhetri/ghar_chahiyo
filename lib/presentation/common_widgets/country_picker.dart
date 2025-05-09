@@ -166,10 +166,6 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
           selectedCountry?.flagEmoji ?? '🇳🇵',
           style: const TextStyle(fontSize: 28),
         ),
-        // child: Text(
-        //   selectedCountry?.flagEmoji ?? '🏳️',
-        //   style: const TextStyle(fontSize: 28),
-        // ),
       ),
     );
   }

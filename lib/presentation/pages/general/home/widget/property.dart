@@ -4,9 +4,8 @@ import '../../../../../core/constants/my_fonts.dart';
 import '../../../../../core/constants/my_icons.dart';
 import '../property_description.dart';
 
-class PropertyCard extends StatelessWidget {
+class Property extends StatelessWidget {
   final String? imagePath;
-  final String? name;
   final String? price;
   final String? area;
   final int? bedrooms;
@@ -17,10 +16,9 @@ class PropertyCard extends StatelessWidget {
   final VoidCallback? onPhoneTap;
   final VoidCallback? onAgentTap;
 
-  const PropertyCard({
+  const Property({
     super.key,
     this.imagePath,
-    this.name,
     this.price,
     this.area,
     this.bedrooms,
@@ -35,8 +33,7 @@ class PropertyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap:
-          onCardTap ??
+      onTap: onCardTap ??
           () {
             Navigator.push(
               context,
@@ -61,33 +58,23 @@ class PropertyCard extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8),
-                  child:
-                      imagePath != null
-                          ? Image.asset(
-                            imagePath!,
-                            height: 156,
-                            width: 153,
-                            fit: BoxFit.cover,
-                          )
-                          : const Placeholder(
-                            fallbackWidth: 153,
-                            fallbackHeight: 156,
-                          ),
+                  child: imagePath != null
+                      ? Image.asset(
+                          imagePath!,
+                          height: 156,
+                          width: 153,
+                          fit: BoxFit.cover,
+                        )
+                      : const Placeholder(
+                          fallbackWidth: 153,
+                          fallbackHeight: 156,
+                        ),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        name ?? 'No Name Provided',
-                        style: const TextStyle(
-                          fontSize: AppFontSizes.normal,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
                       Text(
                         price ?? 'Price not available',
                         style: const TextStyle(
@@ -119,7 +106,7 @@ class PropertyCard extends StatelessWidget {
                           const SizedBox(width: 12),
                           _buildIconText("${bedrooms ?? 0}", MyIcons.bed),
                           const SizedBox(width: 12),
-                          _buildIconText("1", MyIcons.villa),
+                          _buildIconText("1", MyIcons.villa), 
                           const SizedBox(width: 12),
                           Text(
                             type ?? 'Type not specified',

@@ -70,6 +70,7 @@
 import 'package:flutter/material.dart';
 import 'package:ghar_chaiyo/core/constants/my_fonts.dart';
 import 'package:ghar_chaiyo/presentation/common_widgets/sub_outline_button.dart';
+import 'package:ghar_chaiyo/presentation/pages/auth/register/widgets/register.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/activity/activity.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/add_posts/add_posts.dart';
 import 'package:ghar_chaiyo/presentation/pages/general/account/account.dart';
@@ -160,10 +161,16 @@ class _GeneralState extends State<General> {
       context: context,
       builder: (context) {
         return Container(
-          height:347,
-          width:393,
+          height: 347,
+          width: 393,
           child: AlertDialog(
-            title: const Text('Please choose how you want to register to add listing', style:TextStyle(fontSize:AppFontSizes.normal, fontWeight:FontWeight.w700)),
+            title: const Text(
+              'Please choose how you want to register to add listing',
+              style: TextStyle(
+                fontSize: AppFontSizes.normal,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
             content: RegisterTypeSelector(
               onSelectionChanged: (selectedRoles) {
                 print("Selected roles: $selectedRoles");
@@ -182,12 +189,14 @@ class _GeneralState extends State<General> {
                       Navigator.pop(context);
                     },
                   ),
-           
-          
+
                   SubPrimaryButton(
                     title: "Continue",
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RegisterPage()),
+                      );
                     },
                   ),
                 ],
@@ -199,19 +208,3 @@ class _GeneralState extends State<General> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
