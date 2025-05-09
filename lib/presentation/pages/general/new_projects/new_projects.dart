@@ -28,7 +28,7 @@ class _NewProjectsPageState extends State<NewProjectsPage> {
           ),
         ),
         centerTitle: true,
-        leading: const BackButton(color: Colors.black),
+        // leading: const BackButton(color: Colors.black),
         actions: [
           IconButton(
             onPressed: () {

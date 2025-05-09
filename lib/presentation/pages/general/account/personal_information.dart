@@ -48,6 +48,10 @@ class _PersonalInformationPageState extends State<PersonalInformationPage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            CircleAvatar(
+              radius: 40,
+              backgroundImage: AssetImage('assets/images/sandeep.png'),
+            ),
             const SizedBox(height: 26),
             CustomTextField(
               controller: fullnameController,

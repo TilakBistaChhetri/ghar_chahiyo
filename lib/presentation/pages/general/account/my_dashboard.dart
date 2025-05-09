@@ -30,16 +30,63 @@ class MyDashboardPage extends StatelessWidget {
         padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
-            const SizedBox(height: 16),
-            const Text(
-              "Visited Property",
-              style: TextStyle(
-                fontSize: 20,
-                color: MyColors.primaryColor,
-                fontWeight: FontWeight.bold,
+            Container(
+              height: 173,
+              width: double.infinity,
+              color: MyColors.backgroundColor,
+              padding: const EdgeInsets.only(top: 60, bottom: 20),
+              child: Row(
+                children: [
+                  const SizedBox(width: 20),
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage('assets/images/sandeep.png'),
+                  ),
+                  const SizedBox(width: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Text(
+                        'Sam Kumar',
+                        style: TextStyle(
+                          color: MyColors.primaryColor,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        'sam123@gmail.com',
+                        style: TextStyle(
+                          color: MyColors.primaryColor,
+                          fontSize: 14,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        '+977 982135468',
+                        style: TextStyle(color: Colors.white70, fontSize: 14),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 5),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                "Visited Property",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: MyColors.primaryColor,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 4),
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.all(8),

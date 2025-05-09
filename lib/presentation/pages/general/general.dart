@@ -174,6 +174,7 @@ class _GeneralState extends State<General> {
             ),
             actions: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SubOutlineButton(
                     title: "Cancel",
@@ -181,7 +182,7 @@ class _GeneralState extends State<General> {
                       Navigator.pop(context);
                     },
                   ),
-                  SizedBox(width: 5),
+           
           
                   SubPrimaryButton(
                     title: "Continue",

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/my_assets.dart';
 
-class LegalPage extends StatelessWidget {
-  const LegalPage({super.key});
+class PropertyEvaluationPage extends StatelessWidget {
+  const PropertyEvaluationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-      return Scaffold(
+   return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

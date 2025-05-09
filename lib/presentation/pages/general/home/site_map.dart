@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/my_assets.dart';
 
-class LegalPage extends StatelessWidget {
-  const LegalPage({super.key});
+class SiteMapPage extends StatelessWidget {
+  const SiteMapPage({super.key});
 
   @override
   Widget build(BuildContext context) {

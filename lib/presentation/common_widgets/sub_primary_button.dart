@@ -19,8 +19,8 @@ class SubPrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 176,  
-      height: 43, 
+      width: 120,  
+      height: 30, 
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(

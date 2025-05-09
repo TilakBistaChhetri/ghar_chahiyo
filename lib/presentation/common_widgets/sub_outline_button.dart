@@ -7,25 +7,27 @@ class SubOutlineButton extends StatelessWidget {
     super.key,
     required this.title,
     required this.onPressed,
-    this.width = double.infinity, 
-    this.height = 48.0,           
+    this.width = double.infinity,
+    this.height = 48.0,
   });
 
   final String title;
   final VoidCallback onPressed;
   final double width;
-  final double height; 
+  final double height;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 176,  
-      height: 43, 
+      width: 120,
+      height: 30,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: MyColors.secondaryColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(55)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(55),
+          ),
         ),
         child: Text(
           title,

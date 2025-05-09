@@ -148,13 +148,28 @@ class PropertyCard extends StatelessWidget {
                       Row(
                         children: [
                           const SizedBox(width: 4),
-                          Text("${bathrooms ?? 0}"),
+
+                          Text(
+                            "${bathrooms ?? 0}",
+                            style: TextStyle(
+                              fontSize: AppFontSizes.caption,
+                              color: MyColors.primaryColor,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
                           const SizedBox(width: 4),
                           Image.asset(MyIcons.bathroom, width: 12, height: 12),
 
                           const SizedBox(width: 12),
 
-                          Text("${bedrooms ?? 0}"),
+                          Text(
+                            "${bedrooms ?? 0}",
+                            style: TextStyle(
+                              fontSize: AppFontSizes.caption,
+                              color: MyColors.primaryColor,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
                           const SizedBox(width: 4),
                           Image.asset(MyIcons.bed, width: 12, height: 12),
 
@@ -162,6 +177,11 @@ class PropertyCard extends StatelessWidget {
 
                           Text(
                             "${bathrooms ?? 0}",
+                            style: TextStyle(
+                              fontSize: AppFontSizes.caption,
+                              color: MyColors.primaryColor,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ), // Some other count or property
                           const SizedBox(width: 4),
                           Image.asset(
